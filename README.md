@@ -3,7 +3,7 @@
 
 ## Background
 
-One of the primary goals within transportation is to ensure equipment is maintained and safe to use. Damaged or defective equipment can easily cause critical failures which not only causes downtime and customer service failures but can also result in major accidents which could injure truck drivers and the motorists they share the road with. In order to promote safe environments the Department of Transportation regulates that all trailers and tractors must be inspected by certified mechanics once per year for any worn or defective equipment. National Freight takes this initiative a few steps further by having the following self imposed regulations on Pre-Maintanence (PM) Intervals.
+One of the primary goals within transportation is to ensure equipment is maintained and safe to use. Damaged or defective equipment can easily cause critical failures, which not only causes downtime and customer service failures, but can also result in major accidents which could injure truck drivers and the motorists they share the road with. In order to promote safe practices the <a href="https://www.transportation.gov/">Department of Transportation</a> regulates that all trailers and tractors must be inspected once per year for any worn or defective equipment by certified mechanics. National Freight takes this initiative a few steps further by having the following self imposed regulations on Pre-Maintanence (PM) Intervals.
 
 | Equipment Type | PM Interval |
 | -------------- | ------------------- |
