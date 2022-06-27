@@ -18,11 +18,11 @@ NFI Industries owns thousands of trailers so it is no small task to keep track o
 
 Create a dashboard which will concisely display the following information
 
-1) Only display Dry Van Trailers, Company Tractors and Owner Operator Tractors assigned to Profit Center 117
-2) Only display Rollerbed Equipment for Profit Centers 117 and 854 as rollerbed responsibility is shared between both profit centers.
+1) Dry Van Trailers, Company Tractors and Owner Operator Tractors assigned to Profit Center 117
+2) Rollerbed Equipment for Profit Centers 117 and 854 as rollerbed responsibility is shared between both profit centers.
 3) Sort all equipment based on due percentage in decending order
-4) Display a count of each asset type due for PM
-5) Current locations and notes on steps taken to inspect trailers
+4) A count of each asset type due for PM
+5) Current trailer locations and user notes on steps taken to inspect trailers
 
 Equipment becomes due and is inspected daily. As such the list needs to be dynamic by expanding and contracting without user intervention.
 
