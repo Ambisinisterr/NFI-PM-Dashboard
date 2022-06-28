@@ -28,12 +28,12 @@ NFI Industries owns thousands of trailers so it is no small task to keep track o
 ## Explanation
 
 The dashboard was achieved using a three step process.
-<img=https://github.com/Ambisinisterr/NFI-PM-Dashboard/blob/main/assets/Dashboard%2006-26-22.png?raw=true>
+<img src="https://github.com/Ambisinisterr/NFI-PM-Dashboard/blob/main/assets/Dashboard%2006-26-22.png?raw=true"/>
 
 ### DAWG Reports
 As the SQL servers are not directly accessible the DAWG report will need to be entered into the sheet manually. DAWG reports are sent via e-mail and only list one asset class each. As such there is one sheet for each of the DAWG reports.
 
-<img=https://github.com/Ambisinisterr/NFI-PM-Dashboard/blob/main/assets/Trailer%20DAWG%2006-26-22.png?raw=true>
+<img src="https://github.com/Ambisinisterr/NFI-PM-Dashboard/blob/main/assets/Trailer%20DAWG%2006-26-22.png?raw=true"/>
 
 ### Filtering
 There are three hidden sheets to filter each of the asset classes accordinly and then sort them in decending order based on PM due percentage.
@@ -65,7 +65,7 @@ Similar formats were for the two tractor columns except it is filtering to only 
 
 Additionally we want to allow users to add notes for each trailer on the list. In order to ensure the notes move as the lists change they have to be kept in a separate sheet. The bright side to this is that it allows the entire dashboard to be locked reducing the chances code sections could be broken. Trailers on this separate sheet are automatically flagged as being completed so users know they can be removed.
 
-<img=https://github.com/Ambisinisterr/NFI-PM-Dashboard/blob/main/assets/LocationandNotes062622.png?raw=true>
+<img src="https://github.com/Ambisinisterr/NFI-PM-Dashboard/blob/main/assets/LocationandNotes062622.png?raw=true"/>
 
 ## Finishing touches
 Once the above is completed the dashboard is fully functional but not necessarily easy to understand at a glance. Conditional formatting was applied to each section so that the cells with text in them were automatically colored white, else they remain the default of light gray. Text was also set to wrap in the notes section. Unfortunately Google Sheets does not have a setting to add boders with conditional formatting.
