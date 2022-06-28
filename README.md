@@ -69,3 +69,7 @@ Additionally we want to allow users to add notes for each trailer on the list. I
 
 ## Finishing touches
 Once the above is completed the dashboard is fully functional but not necessarily easy to understand at a glance. Conditional formatting was applied to each section so that the cells with text in them were automatically colored white, else they remain the default of light gray. Text was also set to wrap in the notes section. Unfortunately Google Sheets does not have a setting to add boders with conditional formatting.
+
+# Possible Improvements
+* Adding a button to pull data directly from the SQL servers up press. This will require permission and information from NFI's IT department.
+* Adding custom code to workaround Google Sheets not supplying an auto-format for borders
