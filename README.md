@@ -30,12 +30,12 @@ NFI Industries owns thousands of trailers so it is no small task to keep track o
 The dashboard was achieved using a three step process.
 <img src="https://github.com/Ambisinisterr/NFI-PM-Dashboard/blob/main/assets/Dashboard%2006-26-22.png?raw=true"/>
 
-### DAWG Reports
-As the SQL servers are not directly accessible the DAWG report will need to be entered into the sheet manually. DAWG reports are sent via e-mail and only list one asset class each. As such there is one sheet for each of the DAWG reports.
+### 1) Entering DAWG Reports
+As the SQL servers are not directly accessible the DAWG report will need to be entered into the sheet manually. DAWG reports are sent via e-mail and only list one asset class per report. As such there is one sheet for each of the DAWG reports that users will need to update bi-weekly.
 
 <img src="https://github.com/Ambisinisterr/NFI-PM-Dashboard/blob/main/assets/Trailer%20DAWG%2006-26-22.png?raw=true"/>
 
-### Filtering
+### 2) Filtering and Sorting
 There are three hidden sheets to filter each of the asset classes accordinly and then sort them in decending order based on PM due percentage.
 
 The following code filters the DAWG trailer data to only the trailers PC 117 is responsible for.
@@ -46,9 +46,10 @@ The following code sorts the filtered cells by PM percentage in decending order.
 ```
 =SORT(M1:S30,S1:S30,0)
 ```
+Similar code was used to filter Owner Op and Company Tractors.
 
-### Display Dashboard
-Show the filtered and sorted ifnormation on the Dashboard Sheet. Use conditional formatting to ensure the page is easy to read and looks professional.
+### 3) Display Dashboard
+Show the filtered and sorted information on the Dashboard Sheet. Use conditional formatting to ensure the page is easy to read and looks professional.
 
 The following function will display all filtered and sorted trailer numbers, PM percent and trailer type filtering out blank rows.
 ```
@@ -65,10 +66,19 @@ Similar formats were for the two tractor columns except it is filtering to only 
 
 Additionally we want to allow users to add notes for each trailer on the list. In order to ensure the notes move as the lists change they have to be kept in a separate sheet. The bright side to this is that it allows the entire dashboard to be locked reducing the chances code sections could be broken. Trailers on this separate sheet are automatically flagged as being completed so users know they can be removed.
 
+```
+#Lookup matching trailer in the location and notes sheet, pull from the index offset of "Current Location," if null fill with a blank.
+#Repeat for each trailer
+=ARRAYFORMULA(IFNA(VLOOKUP(B5:B,'Location and Notes'!A2:D,3,0),""))
+
+#Same as the above but pull at the offset for "Notes"
+=ARRAYFORMULA(IFNA(VLOOKUP(B5:B,'Location and Notes'!A2:D,4,0),""))
+```
+
 <img src="https://github.com/Ambisinisterr/NFI-PM-Dashboard/blob/main/assets/LocationandNotes062622.png?raw=true"/>
 
 ## Finishing touches
-Once the above is completed the dashboard is fully functional but not necessarily easy to understand at a glance. Conditional formatting was applied to each section so that the cells with text in them were automatically colored white, else they remain the default of light gray. Text was also set to wrap in the notes section. Unfortunately Google Sheets does not have a setting to add boders with conditional formatting.
+The dashboard is fully functional at this point but not necessarily easy to understand at a glance. Conditional formatting was applied to each section so that the cells with text in them were automatically colored white, else they remain the default of light gray. Text was also set to wrap in the notes section in case notes became long. Unfortunately Google Sheets does not have a setting to add boders with conditional formatting.
 
 # Possible Improvements
 * Adding a button to pull data directly from the SQL servers up press. This will require permission and information from NFI's IT department.
